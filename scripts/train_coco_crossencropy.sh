@@ -1,0 +1,11 @@
+python oscar/run_captioning.py \
+    --model_name_or_path pretrained_models/base-vg-labels/ep_67_588997 \
+    --do_train \
+    --do_lower_case \
+    --evaluate_during_training \
+    --add_od_labels \
+    --learning_rate 0.00003 \
+    --per_gpu_train_batch_size 256 \
+    --num_train_epochs 30 \
+    --save_steps 5000 \
+    --output_dir output/
